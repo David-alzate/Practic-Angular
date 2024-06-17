@@ -5,4 +5,11 @@
 <p>Empresa: {{ empresa.value }}</p>
 
 <label>Introduce la empresa </label>
-<input type="text" #empresa (keyup)="0"> <br>
+<input type="text" #empresa (keyup)="0" [disabled]="habilitarButton"> <br>   
+<br/>
+
+<p>{{textLogin}}</p>
+Registrado: <input type="radio" value="si" name="registro" id="registro" [checked]="usuarioLogeado" (click)="setUsuarioRegistrado($event)"> <br>
+No Registrado: <input type="radio" value="no" name="registro" id="registro" (click)="setUsuarioRegistrado($event)">
+
+{{getRegistroUsuario()}}    
