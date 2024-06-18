@@ -1,0 +1,24 @@
+<h2 class="text-center">Calculadora</h2>
+<div class="d-flex justify-content-center">
+<form>
+<label>Numero 1</label> <br>
+<input type="number" [(ngModel)]="numero1" name = "numero1"> 
+<br>
+<label>Numero 2</label><br>
+<input type="number" [(ngModel)]="numero2" name = "numero2"> <br>
+<br>
+<input type="submit" value="sumar" (click)="suma()" class="btn btn-primary"> <br>
+<br>
+
+<input type="submit" value="restar" (click)="restar()" class="btn btn-primary"> <br>
+<br>
+
+<input type="submit" value="multiplicar" (click)="multiplicar()" class="btn btn-primary"> <br>
+<br>
+
+<input type="submit" value="dividir" (click)="dividir()" class="btn btn-primary"> <br>
+<br>
+<label>Resultado: </label> <br>
+<p>{{resultado}}</p>
+</form> 
+</div>
