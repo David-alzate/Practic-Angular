@@ -10,7 +10,8 @@ export class EmpleadoComponent {
   nombre: String = "David"
   apellido: String = "Alzate"
   edad:number = 19
-  // empresa:String = "UCO"
+  empresa:String = "UCO"
+
   textLogin:String = "No hay nadie registrado"
 
   habilitarButton=false;
@@ -30,5 +31,7 @@ export class EmpleadoComponent {
       this.textLogin = "No hay nadie registrado";
     }
   }
+
+  
 
 }

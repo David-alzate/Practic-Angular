@@ -2,14 +2,15 @@
 <p>Nombre: {{ nombre }}</p>
 <p>Apellido: {{ apellido }}</p>
 <p>Edad: {{edad > 17 ? "Es mayor de edad" : "es menor de edad"}}</p>
-<p>Empresa: {{ empresa.value }}</p>
+<p>Empresa: {{ empresa }}</p>
 
 <label>Introduce la empresa </label>
-<input type="text" #empresa (keyup)="0" [disabled]="habilitarButton"> <br>   
+<!-- <input type="text" #empresa (keyup)="0" [disabled]="habilitarButton"> <br>   -->
+<input type="text" [(ngModel)]="empresa">
 <br/>
 
 <p>{{textLogin}}</p>
 Registrado: <input type="radio" value="si" name="registro" id="registro" [checked]="usuarioLogeado" (click)="setUsuarioRegistrado($event)"> <br>
 No Registrado: <input type="radio" value="no" name="registro" id="registro" (click)="setUsuarioRegistrado($event)">
 
-{{getRegistroUsuario()}}    
+{{getRegistroUsuario()}}     
