@@ -1,3 +1,9 @@
 input{
     width: 400px;
 }
+
+.colorNombreDavid{
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+}

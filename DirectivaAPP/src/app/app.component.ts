@@ -15,6 +15,7 @@ export class AppComponent {
   mensaje: string = "";
   nombre: string = "asa";
   apellido: string = "";
+  cargo:String = "";
   registrado = false;
   
   entradas = [
