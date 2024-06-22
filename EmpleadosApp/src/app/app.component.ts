@@ -20,6 +20,7 @@ export class AppComponent {
   apellido:String = "";
   cargo:String = "";
   salario:number = 0;
+  i: number;
 
   crearEmpleado(){
     let EmpleadoNuevo = new Empleado(this.nombre, this.apellido, this.cargo, this.salario);

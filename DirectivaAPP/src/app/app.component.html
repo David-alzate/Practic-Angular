@@ -16,7 +16,9 @@
       <input class="form-text" type="text" name="Cargo" [(ngModel)]="cargo">
     </div>
     <button class="btn btn-primary" (click)="registrarUsuario()">Enviar</button>
-    <p *ngIf="registrado; else sinRegistrar">{{mensaje}} con nombre <span [ngClass]="{colorNombreDavid: nombre == 'david'}">{{nombre}}</span> {{apellido}} y cargo <span [ngStyle]="{color: cargo=='director' ? 'red' : 'black'} "> {{cargo}} </span></p>
+    <p *ngIf="registrado; else sinRegistrar">{{mensaje}} con nombre <span
+        [ngClass]="{colorNombreDavid: nombre == 'david'}">{{nombre}}</span> {{apellido}} y cargo <span
+        [ngStyle]="{color: cargo=='director' ? 'red' : 'black'} "> {{cargo}} </span></p>
 
     <ng-template #sinRegistrar>
       <p>Nadie registrado</p>
