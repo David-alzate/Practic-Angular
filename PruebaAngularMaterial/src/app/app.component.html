@@ -1,0 +1,31 @@
+<div>
+  <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+    <a class="navbar-brand title" routerLink="/parqueadero">Gestion</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <button class="nav-link nav-CrearParqueadero" mat-button [matMenuTriggerFor]="parqueadero" matMenuTrigger>Parqueadero</button>
+        <mat-menu #parqueadero="matMenu">
+          <button mat-menu-item>Crear Parqueadero</button>
+          <button mat-menu-item>Lista de parqueaderos</button>
+        </mat-menu>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link nav-CrearParqueadero" mat-button [matMenuTriggerFor]="sede">Sede</button>
+        <mat-menu #sede="matMenu">
+          <button mat-menu-item>Crear Sede</button>
+          <button mat-menu-item>Lista de Sedes</button>
+        </mat-menu>
+      </li> 
+      <li class="nav-item">
+        <button class="nav-link nav-CrearParqueadero" mat-button [matMenuTriggerFor]="empleado">Empleados</button>
+        <mat-menu #empleado="matMenu">
+          <button mat-menu-item>Crear Empleado</button>
+          <button mat-menu-item>Lista de Empleados</button>
+        </mat-menu>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link nav-CerrarSesion">Cerrar Sesion</a>
+      </li>
+    </ul>
+  </nav>
+</div>

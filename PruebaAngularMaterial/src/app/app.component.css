@@ -1,0 +1,179 @@
+.title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #C3C3C3 !important;
+}
+
+.nav-CrearParqueadero {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nav-CrearParqueadero:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-CrearSede {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nav-CrearSede:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-ListaParqueaderos {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nav-ListaParqueaderos:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-ListaSedes {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nav-ListaSedes:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-CerrarSesion {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nav-CerrarSesion:hover {
+    background-color: red;
+    color: black;
+}
+
+.nav-CrearEmpleado {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nav-CrearEmpleado:hover {
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.form-text {
+    font-size: 18px;
+    font-weight: bold;;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 80%;
+    max-width: 80%;
+}
+
+form label {
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+    background-color: #DED61B;
+    border-radius: 30px;
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
+    font-size: 18px;    
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    background-color: #D9D9D9!important;
+    font-weight: bold !important;
+    margin-bottom: 20px;
+    border-radius: 15px !important;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+}
+
+form button {
+    width: 24%;
+    padding: 10px;
+    background-color: #DED61B;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+form button:hover {
+    background-color: #CCCCCC;
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    background-color: #D9D9D9 !important;
+    font-weight: bold !important;
+    margin-bottom: 20px;
+    border-radius: 15px !important;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+}
+
+.form-cuenta {
+    width: 80%; 
+    max-width: 80%; 
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-title {
+    display: flex;
+    height: 10vh;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    
+}
+
+.contenedor-form {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
