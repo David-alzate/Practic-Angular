@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Form, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit{
   form: FormGroup;
   loading = false;
 
-  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar){
+  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router){
     this.form = this.fb.group({
       usuario: ['', Validators.required], 
       password: ['', Validators.required]
@@ -31,6 +32,7 @@ ingresar(){
   if(usuario == 'david' && password == '123'){
     // Redireccionamos a la app 
     this.fakeLoadin();
+
   } else {
     // Mensaje de error
     this.error();
@@ -50,7 +52,7 @@ error(){
 fakeLoadin(){
   this.loading = true;
   setTimeout(() => {
-    this.loading = false;
+    this.router.navigate(['dashboard']);
   }, 1500);
 }
 }
