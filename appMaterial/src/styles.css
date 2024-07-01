@@ -12,3 +12,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .toolbar {
     background-color: white !important;
 }
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
